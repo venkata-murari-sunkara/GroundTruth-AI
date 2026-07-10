@@ -182,10 +182,10 @@ pip install -r requirements.txt
 Create a `.env` file in the root directory:
 
 ```env
-OPENAI_API_KEY=your_openai_key
-GEMINI_API_KEY=your_gemini_key
-ANTHROPIC_API_KEY=your_claude_key
-DATABASE_URL=postgresql://username:password@localhost/groundtruth
+OPENAI_API_KEY= your_openai_key
+GEMINI_API_KEY= your_gemini_key
+ANTHROPIC_API_KEY= your_claude_key
+DATABASE_URL= postgresql://username:password@localhost/groundtruth
 ```
 
 ### 5. Run Backend
