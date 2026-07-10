@@ -12,7 +12,7 @@
 ## 🌐 Live Demo
 
 * **Frontend (Streamlit App):** [Try it here](your-streamlit-url)
-* **Backend API (Swagger Docs):** [View API docs](your-render-url/docs)
+* **Backend API (Swagger Docs):** [View API docs](https://groundtruth-ai.onrender.com)
 
 > ⚠️ Note: The backend is hosted on Render's free tier and may take 30–60 seconds to wake up if it has been inactive. Please be patient on first load.
 
