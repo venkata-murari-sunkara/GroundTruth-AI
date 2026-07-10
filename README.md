@@ -246,7 +246,7 @@ Cost and full latency data remain visible in the dashboard for deeper analysis e
 
 ## 🚧 Challenges Solved
 
-* **Concurrent API orchestration:** Coordinating simultaneous requests across three different providers (Gemini, OpenAI, Anthropic) — each with different SDKs, rate limits, and response formats — required a unified async wrapper to normalize responses before scoring.
+**Multi-provider API integration:** Built a unified evaluation pipeline that integrates Gemini, GPT-4o Mini, and Claude through a common interface despite differences in SDKs, authentication, response formats, and error handling. This keeps the benchmarking workflow provider-agnostic and easy to extend with additional models.
 
 * **Judge-model consistency:** Using an LLM as a semantic judge introduces its own variance between runs. Structured the judge prompt with explicit scoring criteria and a fixed 0–1 scale to reduce inconsistency across repeated evaluations.
 
