@@ -28,7 +28,7 @@ Currently supported models:
 
 - Gemini 2.5 Flash
 - GPT-4o Mini
-- Claude Haiku
+- Claude Haiku 4.5
 
 ---
 
@@ -112,8 +112,11 @@ Download full benchmark results as CSV for offline analysis.
 ## 🛠 Tech Stack
 
 **Backend:** FastAPI, SQLAlchemy, PostgreSQL, Pydantic
+
 **Frontend:** Streamlit, Plotly, Pandas
+
 **LLM Providers:** Google Gemini API, OpenAI API, Anthropic Claude API
+
 **Database:** PostgreSQL
 
 ---
@@ -135,7 +138,6 @@ GroundTruth-AI/
 │   ├── main.py
 │   ├── model_runner.py
 │   ├── models.py
-│   └── results_store.py
 ├── data/                        # Benchmark datasets
 ├── frontend/
 │   ├── app.py
@@ -278,12 +280,6 @@ Cost and full latency data remain visible in the dashboard for deeper analysis e
 - Batch benchmarking
 - PDF export
 - Public REST API
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
