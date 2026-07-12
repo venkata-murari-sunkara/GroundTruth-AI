@@ -12,7 +12,7 @@
 ## 🌐 Live Demo
 
 * **Frontend (Streamlit App):** [Try it here](https://groundtruth-ai-3cik6qyp6cmdzgidvgzvbt.streamlit.app/)
-* **Backend API (Swagger Docs):** [View API docs](https://groundtruth-ai.onrender.com)
+* **Backend API (Swagger Docs):** [View API docs](https://groundtruth-ai.onrender.com/docs)
 
 > ⚠️ Note: The backend is hosted on Render's free tier and may take 30–60 seconds to wake up if it has been inactive. Please be patient on first load.
 
@@ -32,6 +32,20 @@ Currently supported models:
 
 ---
 
+## 🔑 Key Finding
+
+Benchmarked GPT-4o Mini, Gemini 2.5 Flash, and Claude Haiku 4.5 across a 50-question QA dataset covering factual recall, reasoning, instruction-following, and code/logic tasks.
+
+**Result:** All three models scored within a comparable semantic-quality band (0.89–0.98), but cost varied by up to **8x per query** — from $0.0002 (GPT-4o Mini) to $0.0016 (Claude Haiku 4.5). This surfaces a real production tradeoff: near-identical output quality doesn't mean near-identical cost, and model selection should weigh both.
+
+| Model | Accuracy | Semantic Score | Latency | Est. Cost/Query |
+|---|---|---|---|---|
+| Gemini 2.5 Flash | 80% | 0.95 | 0.95s | $0.000395 |
+| GPT-4o Mini | 75% | 0.98 | 0.92s | $0.000185 |
+| Claude Haiku 4.5 | 73% | 0.89 | 0.89s | $0.001555 |
+
+
+--- 
 ## 🚀 Features
 
 ### 📤 Upload Benchmark Dataset
